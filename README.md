@@ -74,13 +74,14 @@ Then you will be able to install Python 3 and Node.JS
 ```console
 brew install python
 brew install node
+brew install wget
 ```
 
 Download prepared package, and install APIO
 ```console
 cd ~
 
-curl -L -O https://github.com/mmicko/fpga101-workshop/releases/download/tools/fpga101-darwin-x64-tools.tar.gz
+wget https://github.com/mmicko/fpga101-workshop/releases/download/tools/fpga101-darwin-x64-tools.tar.gz
 
 tar xvfz fpga101-darwin-x64-tools.tar.gz
 
