@@ -33,7 +33,11 @@ source fpga101.sh
 cd apio
 
 sudo pip install -e .
+```
 
+Install needed Node.JS packages for IceStudio
+
+```console
 cd ../icestudio
 npm install
 ```
@@ -59,3 +63,43 @@ Your profile will be generated and you will be greeted by next prompt.
 ```
 
 # macOS Install
+
+First install Homebrew to be able to install rest of packages.
+
+```console
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Then you will be able to install Python 3 and Node.JS
+```console
+brew install python
+brew install node
+```
+
+Download prepared package, and install APIO
+```console
+cd ~
+
+wget https://github.com/mmicko/fpga101-workshop/releases/download/tools/fpga101-darwin-x64-tools.tar.gz
+
+tar xvfz fpga101-darwin-x64-tools.tar.gz
+
+cd hackaday-fpga101
+
+source fpga101.sh
+
+cd apio
+
+sudo pip3 install -e .
+```
+
+Install needed Node.JS packages for IceStudio
+
+```console
+cd ../icestudio
+npm install
+```
+
+Test if all is setup correctly
+```console
+```
