@@ -44,4 +44,18 @@ Test if all is setup correctly
 
 # Windows Install
 
+Download file from [this link](https://github.com/mmicko/fpga101-workshop/releases/download/tools/fpga101-windows-x64-tools.7z) first.
+
+Uze 7zip (can be downloaded from [here](https://www.7-zip.org/download.html)) to unpack file (using right click -> 7-Zip -> Extract here )
+
+Move that folder to root of C drive (mandatory due to location being hardcoded in part of msys install)
+
+Go to c:\msys64  and click ConEmu.exe to get console.
+
+Your profile will be generated and you will be greeted by next prompt.
+
+```console
+[HACKADAY] C:\msys64\src>
+```
+
 # macOS Install
