@@ -83,11 +83,13 @@ First install Homebrew to be able to install rest of packages.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Then you will be able to install Python 3 and Node.JS
+Then you will be able to install Python 3, Node.JS and GTKWave
 ```console
 brew install python
 brew install node
 brew install wget
+
+brew cask install gtkwave
 ```
 
 Download prepared package, and install APIO
@@ -140,7 +142,7 @@ icepack hardware.asc hardware.bin
 ========================= [SUCCESS] Took 1.07 seconds =========================
 ```
 
-To check if GTKWave is installed fine use
+To check if GTKWave is installed fine use (on macOS it will be as separate application so we will use it manually)
 
 ```console
 apio sim
