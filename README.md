@@ -80,7 +80,7 @@ Download prepared package, and install APIO
 ```console
 cd ~
 
-wget https://github.com/mmicko/fpga101-workshop/releases/download/tools/fpga101-darwin-x64-tools.tar.gz
+curl -L -O https://github.com/mmicko/fpga101-workshop/releases/download/tools/fpga101-darwin-x64-tools.tar.gz
 
 tar xvfz fpga101-darwin-x64-tools.tar.gz
 
