@@ -118,28 +118,26 @@ npm install
 
 # Workshop materials
 
+**NOTE** to be able to use git utility on Windows, first run msys but just leave it open at side, still use main window for work:
+```console
+c:\msys64\msys2.exe
+```
+
 To be able to test environment and to have starting point for workshop you also need to download this repository.
 
 ```console
-cd ~
-
 git clone https://github.com/mmicko/fpga101-workshop
-
 ```
 
-Note that on Windows there are certain issues with Git utility not being able to be used in standard console mode, so 
-execute next lines, in order to first enter msys mode to be able to execute this.
-
-```console
-bash
-
-git clone https://github.com/mmicko/fpga101-workshop
-
-exit 
-```
-
+In examples down listed, assumption is that on Linux and macOS all is downloaded in user home folder, and on Windows in c:\msys64\src folder.
 
 # Testing
+
+For Linux and macOS always make sure you have tools setup and initialized first.
+
+```console
+source ~/hackaday-fpga101/fpga101.sh
+```
 
 ## Testing APIO environment
 
