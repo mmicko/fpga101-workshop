@@ -116,14 +116,36 @@ cd ../icestudio
 npm install
 ```
 
-# Testing APIO environment
+# Workshop materials
 
-To test if all is setup correctly.
+To be able to test environment and to have starting point for workshop you also need to download this repository.
 
 ```console
 cd ~
 
 git clone https://github.com/mmicko/fpga101-workshop
+
+```
+
+Note that on Windows there are certain issues with Git utility not being able to be used in standard console mode, so 
+execute next lines, in order to first enter msys mode to be able to execute this.
+
+```console
+bash
+
+git clone https://github.com/mmicko/fpga101-workshop
+
+exit 
+```
+
+
+# Testing
+
+## Testing APIO environment
+
+To test if all is setup correctly.
+
+```console
 
 cd fpga101-workshop/tests/led
 
@@ -149,7 +171,7 @@ apio sim
 ```
 And that would open GTKWave with simulation file.
 
-# Testing Risc-V compiler
+## Testing Risc-V compiler
 
 ```console
 cd ~
@@ -163,7 +185,7 @@ riscv64-unknown-elf-gcc -O3 -nostartfiles -mabi=ilp32 -march=rv32ic -Wl,-Bstatic
 riscv64-unknown-elf-objcopy  -O binary firmware.elf firmware.bin
 ```
 
-# Testing IceStudio
+## Testing IceStudio
 
 ```console
 cd ~
