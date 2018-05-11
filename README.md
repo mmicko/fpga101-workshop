@@ -118,15 +118,15 @@ npm install
 
 # Workshop materials
 
-**NOTE** to be able to use git utility on Windows, first run msys but just leave it open at side, still use main window for work:
-```console
-c:\msys64\msys2.exe
-```
-
 To be able to test environment and to have starting point for workshop you also need to download this repository.
 
 ```console
 git clone https://github.com/mmicko/fpga101-workshop
+```
+
+**NOTE** In case you are getting error on git utility on Windows, first run msys but just leave it open at side, and try again in main window:
+```console
+c:\msys64\msys2.exe
 ```
 
 In examples down listed, assumption is that on Linux and macOS all is downloaded in user home folder, and on Windows in c:\msys64\src folder.
