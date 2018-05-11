@@ -75,6 +75,13 @@ Your profile will be generated and you will be greeted by next prompt.
 [HACKADAY] C:\msys64\src>
 ```
 
+If you do not already have installed you favorite terminal console for serial access, please install [PuTTY](https://www.putty.org/) or similar.
+You can even install it from command line by using:
+
+```console
+pacman -S mingw-w64-x86_64-putty
+```
+
 # macOS Install
 
 First install Homebrew to be able to install rest of packages.
