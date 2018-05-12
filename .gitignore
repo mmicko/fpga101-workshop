@@ -1,0 +1,8 @@
+.vscode
+*.dblite
+*.asc
+*.bin
+*.blif
+*.out
+*.vcd
+*.elf
