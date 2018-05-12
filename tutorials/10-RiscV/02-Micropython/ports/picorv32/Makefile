@@ -7,7 +7,7 @@ QSTR_DEFS = qstrdefsport.h
 
 # include py core make definitions
 include $(TOP)/py/py.mk
-CROSS_COMPILE = /opt/riscv64/bin/riscv64-unknown-elf-
+CROSS_COMPILE = riscv64-unknown-elf-
 
 INC += -I.
 INC += -I$(TOP)
