@@ -1,0 +1,106 @@
+[*]
+[*] GTKWave Analyzer v3.3.77 (w)1999-2016 BSI
+[*] Wed Nov 01 14:49:21 2017
+[*]
+[timestart] 0
+[size] 1920 1017
+[pos] -1 -1
+*-16.000000 364700 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] grom_computer_tb.
+[treeopen] grom_computer_tb.computer.
+[treeopen] grom_computer_tb.computer.cpu.
+[sst_width] 197
+[signals_width] 167
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@200
+-grom_computer_tb
+@28
+grom_computer_tb.clk
+@22
+grom_computer_tb.display_out[7:0]
+@28
+grom_computer_tb.hlt
+grom_computer_tb.reset
+@200
+-computer
+@22
+grom_computer_tb.computer.addr[11:0]
+@28
+grom_computer_tb.computer.clk
+@22
+grom_computer_tb.computer.display_out[7:0]
+@28
+grom_computer_tb.computer.hlt
+grom_computer_tb.computer.ioreq
+grom_computer_tb.computer.mem_enable
+@22
+grom_computer_tb.computer.memory_in[7:0]
+grom_computer_tb.computer.memory_out[7:0]
+@28
+grom_computer_tb.computer.reset
+grom_computer_tb.computer.we
+@200
+-cpu
+@22
+grom_computer_tb.computer.cpu.CS[3:0]
+grom_computer_tb.computer.cpu.DS[3:0]
+grom_computer_tb.computer.cpu.FUTURE_PC[11:0]
+grom_computer_tb.computer.cpu.IR[7:0]
+grom_computer_tb.computer.cpu.PC[11:0]
+@28
+grom_computer_tb.computer.cpu.RESULT_REG[1:0]
+@22
+grom_computer_tb.computer.cpu.SP[11:0]
+grom_computer_tb.computer.cpu.VALUE[7:0]
+grom_computer_tb.computer.cpu.addr[11:0]
+@28
+grom_computer_tb.computer.cpu.alu_CF
+grom_computer_tb.computer.cpu.alu_SF
+grom_computer_tb.computer.cpu.alu_ZF
+@22
+grom_computer_tb.computer.cpu.alu_a[7:0]
+grom_computer_tb.computer.cpu.alu_b[7:0]
+grom_computer_tb.computer.cpu.alu_op[3:0]
+grom_computer_tb.computer.cpu.alu_res[7:0]
+@28
+grom_computer_tb.computer.cpu.clk
+@22
+grom_computer_tb.computer.cpu.data_in[7:0]
+grom_computer_tb.computer.cpu.data_out[7:0]
+@28
+grom_computer_tb.computer.cpu.hlt
+grom_computer_tb.computer.cpu.ioreq
+grom_computer_tb.computer.cpu.jump
+grom_computer_tb.computer.cpu.reset
+@22
+grom_computer_tb.computer.cpu.state[4:0]
+@28
+grom_computer_tb.computer.cpu.we
+@200
+-alu
+@22
+grom_computer_tb.computer.cpu.alu.A[7:0]
+grom_computer_tb.computer.cpu.alu.B[7:0]
+@28
+grom_computer_tb.computer.cpu.alu.CF
+grom_computer_tb.computer.cpu.alu.SF
+grom_computer_tb.computer.cpu.alu.ZF
+grom_computer_tb.computer.cpu.alu.clk
+@22
+grom_computer_tb.computer.cpu.alu.operation[3:0]
+grom_computer_tb.computer.cpu.alu.result[7:0]
+grom_computer_tb.computer.cpu.alu.tmp[8:0]
+@200
+-memory
+@23
+grom_computer_tb.computer.memory.addr[11:0]
+@28
+grom_computer_tb.computer.memory.clk
+@22
+grom_computer_tb.computer.memory.data_in[7:0]
+grom_computer_tb.computer.memory.data_out[7:0]
+@28
+grom_computer_tb.computer.memory.we
+[pattern_trace] 1
+[pattern_trace] 0
