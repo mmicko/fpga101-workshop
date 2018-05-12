@@ -11,7 +11,7 @@ module rgb (
 
     initial 
     begin
-        clk_cnt <= 0;
+        clk_cnt = 0;
     end
 
     always @(posedge CLK)
