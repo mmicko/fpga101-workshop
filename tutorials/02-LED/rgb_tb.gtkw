@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Sat May 12 10:24:54 2018
+[*]
+[dumpfile] "/home/micko/src/fpga101-workshop/tutorials/02-LED/rgb_tb.vcd"
+[dumpfile_mtime] "Sat May 12 10:24:30 2018"
+[dumpfile_size] 3798
+[savefile] "/home/micko/src/fpga101-workshop/tutorials/02-LED/rgb_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-18.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 196
+[signals_width] 86
+[sst_expanded] 1
+[sst_vpaned_height] 150
+@28
+rgb_tb.clk
+rgb_tb.led_b
+rgb_tb.led_g
+rgb_tb.led_pwm
+rgb_tb.led_r
+[pattern_trace] 1
+[pattern_trace] 0
