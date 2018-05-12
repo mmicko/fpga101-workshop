@@ -1,0 +1,6 @@
+# 12 MHz clock
+
+set_io -nowarn tx    38 # PMOD6
+set_io -nowarn rx    36 # PMOD4
+
+set_io -nowarn LCD_PWM 13 # output

@@ -1,0 +1,44 @@
+# 12 MHz clock
+set_io -nowarn CLK 35 # input
+
+# LCD connector
+set_io -nowarn LCD_CLK 18 # output
+set_io -nowarn LCD_DEN 19 # output
+set_io -nowarn LCD_VS  11 # output
+set_io -nowarn LCD_HS  9  # output
+set_io -nowarn LCD_RST 2  # output
+set_io -nowarn LCD_D7  6  # output
+set_io -nowarn LCD_D6  44 # output
+set_io -nowarn LCD_D5  4  # output
+set_io -nowarn LCD_D4  3  # output
+set_io -nowarn LCD_D3  48 # output
+set_io -nowarn LCD_D2  45 # output
+set_io -nowarn LCD_D1  47 # output
+set_io -nowarn LCD_D0  46 # output
+set_io -nowarn LCD_PWM 13 # output
+
+# Buttons
+set_io -nowarn B0 23 # input
+set_io -nowarn B1 25 # input
+set_io -nowarn B2 26 # input
+set_io -nowarn B3 27 # input
+set_io -nowarn B4 21 # input
+set_io -nowarn B5 12 # input
+
+# Audio jack
+set_io -nowarn AUDIO 37 # output
+
+# PMOD connector
+set_io -nowarn PMOD0 32
+set_io -nowarn PMOD1 31
+set_io -nowarn PMOD2 34
+set_io -nowarn PMOD3 43
+set_io -nowarn PMOD4 36
+set_io -nowarn PMOD5 42
+set_io -nowarn PMOD6 38
+set_io -nowarn PMOD7 28
+
+# RGB LED Driver
+set_io -nowarn LED_G 39 # output
+set_io -nowarn LED_B 40 # output
+set_io -nowarn LED_R 41 # output
