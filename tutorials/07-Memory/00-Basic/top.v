@@ -50,19 +50,12 @@ video generator ( .clk(pixclk), // pixel clock in
        Custom video generator 
    ----------------------------*/
 wire [7:0] data_out;
-wire [7:0] char;
-wire [7:0] attr;
 
 font_rom vga_font(
     .clk(pixclk),
-    .addr({ char, v_pos[3:0] }),
+    .addr({ 8'd65, v_pos[3:0] }),
     .data_out(data_out)
 );
-
-text_rom text_mem(
-    .clk(pixclk),
-    .addr({ v_pos[9:4],5'b00000} + { v_pos[9:4],3'b000 } + h_pos[9:3]),
-    .data_out(char));
 
 assign rgb_data = data_out[7-h_pos[2:0]+1] ? 24'hffffff : 24'h0000aa; // +1 for sync
 
