@@ -75,6 +75,7 @@ extern uint32_t _heap_start;
 int main(int argc, char **argv) {
 	reg_uart_clkdiv = 1250;
     led_init();
+    lcd_clear();
 
     int stack_dummy;
     

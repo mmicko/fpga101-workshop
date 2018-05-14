@@ -44,11 +44,34 @@ STATIC mp_obj_t pyb_delay(mp_obj_t ms_in) {
 }
 STATIC MP_DEFINE_CONST_FUN_OBJ_1(pyb_delay_obj, pyb_delay);
 
+#define reg_tone ((volatile uint32_t*)0x06000000)
+
+STATIC mp_obj_t pyb_tone(mp_obj_t freq_in, mp_obj_t ms_in) {
+	mp_int_t freq = mp_obj_get_int(freq_in);
+    mp_int_t ms = mp_obj_get_int(ms_in);
+
+	reg_tone[0] = 12000000L / freq / 2;
+	uint32_t cycles_begin, cycles_now, cycles = 0;
+	__asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
+
+	while (cycles < (ms * 12000)) {
+		__asm__ volatile ("rdcycle %0" : "=r"(cycles_now));
+		cycles = cycles_now - cycles_begin;
+	}
+	reg_tone[0] = 0;
+    return mp_const_none;
+}
+STATIC MP_DEFINE_CONST_FUN_OBJ_2(pyb_tone_obj, pyb_tone);
+
 STATIC const mp_rom_map_elem_t pyb_module_globals_table[] = {
     { MP_ROM_QSTR(MP_QSTR___name__), MP_ROM_QSTR(MP_QSTR_pyb) },
 
     { MP_ROM_QSTR(MP_QSTR_LED), MP_ROM_PTR(&pyb_led_type) },
+	{ MP_ROM_QSTR(MP_QSTR_LCD), MP_ROM_PTR(&pyb_lcd_type) },
+    { MP_ROM_QSTR(MP_QSTR_Switch), MP_ROM_PTR(&pyb_switch_type) },
+
     { MP_ROM_QSTR(MP_QSTR_delay), MP_ROM_PTR(&pyb_delay_obj) },
+	{ MP_ROM_QSTR(MP_QSTR_tone), MP_ROM_PTR(&pyb_tone_obj) },
 };
 
 STATIC MP_DEFINE_CONST_DICT(pyb_module_globals, pyb_module_globals_table);

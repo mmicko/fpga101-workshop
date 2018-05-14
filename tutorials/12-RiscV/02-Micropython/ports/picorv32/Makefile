@@ -25,6 +25,8 @@ SRC_C = \
 	board.c \
 	modpyb.c \
 	modpybled.c \
+	modpyblcd.c \
+	modpybswitch.c \
 	lib/utils/stdout_helpers.c \
 	lib/utils/pyexec.c \
 	lib/mp-readline/readline.c
