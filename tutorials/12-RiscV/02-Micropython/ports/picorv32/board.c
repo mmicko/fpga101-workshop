@@ -94,3 +94,10 @@ void lcd_clear()
 	for(int i = 0; i < 1024; i++)
 		reg_attr[i] = 0x0f;
 }
+
+void lcd_move(int xpos, int ypos)
+{
+	cursor_x = (xpos < LCD_WIDTH) ? ((xpos > 0) ? xpos : 0): LCD_WIDTH-1;
+	cursor_y = (ypos < LCD_HEIGHT) ? ((ypos > 0) ? ypos : 0) : LCD_HEIGHT-1;
+	cursor_addr = cursor_y * LCD_WIDTH + cursor_x;
+}

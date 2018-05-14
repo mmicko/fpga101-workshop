@@ -57,6 +57,14 @@ mp_obj_t pyb_lcd_pos_y(mp_obj_t self_in) {
 }
 STATIC MP_DEFINE_CONST_FUN_OBJ_1(pyb_lcd_pos_y_obj, pyb_lcd_pos_y);
 
+mp_obj_t pyb_lcd_move(mp_obj_t self_in,mp_obj_t xpos_in, mp_obj_t ypos_in) {
+    mp_int_t xpos = mp_obj_get_int(xpos_in);
+    mp_int_t ypos = mp_obj_get_int(ypos_in);
+    lcd_move(xpos,ypos);
+    return mp_const_none;
+}
+STATIC MP_DEFINE_CONST_FUN_OBJ_3(pyb_lcd_move_obj, pyb_lcd_move);
+
 /// \method write(str)
 ///
 /// Write the string `str` to the screen.  It will appear immediately.
@@ -73,6 +81,7 @@ STATIC const mp_rom_map_elem_t pyb_lcd_locals_dict_table[] = {
 	{ MP_ROM_QSTR(MP_QSTR_x), MP_ROM_PTR(&pyb_lcd_pos_x_obj) },
     { MP_ROM_QSTR(MP_QSTR_y), MP_ROM_PTR(&pyb_lcd_pos_y_obj) },
 	{ MP_ROM_QSTR(MP_QSTR_write), MP_ROM_PTR(&pyb_lcd_write_obj) },
+    { MP_ROM_QSTR(MP_QSTR_move), MP_ROM_PTR(&pyb_lcd_move_obj) },
 };
 
 STATIC MP_DEFINE_CONST_DICT(pyb_lcd_locals_dict, pyb_lcd_locals_dict_table);

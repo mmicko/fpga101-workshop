@@ -11,5 +11,6 @@ int lcd_pos_x();
 int lcd_pos_y();
 void lcd_write(const char *data, int len);
 void lcd_clear();
+void lcd_move(int xpos, int ypos);
 
 #endif // MICROPY_INCLUDED_UPDUINO_BOARD_H
