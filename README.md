@@ -25,7 +25,7 @@ First install required packages.
 
 For Ubuntu use :
 ```console
-sudo apt install python-pip make git gtkwave
+sudo apt install python-pip make git gtkwave curl
 ```
 
 Also install Node.JS
