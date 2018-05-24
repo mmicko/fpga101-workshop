@@ -201,7 +201,7 @@ npm start
 
 For Windows:
 ```console
-c:\msys64\opt\icestudio 
+cd \msys64\opt\icestudio 
 npm start
 ```
 
