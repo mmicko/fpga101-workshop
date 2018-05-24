@@ -192,9 +192,16 @@ riscv64-unknown-elf-objcopy  -O binary firmware.elf firmware.bin
 
 ## Testing IceStudio
 
+For Linux and macOS:
 ```console
 cd ~
 cd hackaday-fpga101/icestudio
+npm start
+```
+
+For Windows:
+```console
+c:\msys64\opt\icestudio 
 npm start
 ```
 
