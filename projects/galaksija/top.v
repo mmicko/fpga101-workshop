@@ -97,7 +97,7 @@ video generator ( .clk(pixclk), // pixel clock in
 
 		.ser_rx(ser_rx),
 
-		.cfg_divider(12000000/9600),
+		.cfg_divider(12000000/19200),
 
 		.data(uart_out),
 		.valid(rx_valid),
