@@ -49,6 +49,7 @@ module altair(
 		rd_rammain = 0;
 		rd_rom = 0;
 		rd_sio = 0;
+		idata = 8'hff;		
 		casex ({boot,sysctl[6],addr[15:8]})
 			// Turn-key BOOT
 			{2'b10,8'bxxxxxxxx}: begin idata = boot_out; rd_boot = rd; end       // any address
