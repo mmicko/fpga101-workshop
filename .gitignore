@@ -6,4 +6,6 @@
 *.out
 *.vcd
 *.elf
+*.json
+*.rpt
 abc.history
